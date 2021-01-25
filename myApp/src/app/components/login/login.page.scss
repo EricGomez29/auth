@@ -26,6 +26,7 @@
 
 .title h3 {
     color: white;
+    margin-top: 10px;
 }
 
 .checkbox {
@@ -55,13 +56,13 @@
     max-width: 140px;
 }
 
-.imgY {
-    margin-top: 25%;
-}
-
 .form {
     margin-top: 60px;
     z-index: 5;
+}
+
+.form p {
+    text-align: center;
 }
 
 .back {
