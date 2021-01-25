@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from "./guards/auth.guard";
+import { NoLoginGuard } from "./guards/no-login.guard";
 
 const routes: Routes = [{ 
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: './home/home.module#HomePageModule', canActivate:[AuthGuard]
   },{
     path: '',
     redirectTo: 'home',
@@ -11,7 +13,7 @@ const routes: Routes = [{
   },
   {
     path: 'login',
-    loadChildren: () => import('./components/login/login.module').then( m => m.LoginPageModule)
+    loadChildren: './components/login/login.module#LoginPageModule', canActivate:[NoLoginGuard]
   },
   {
     path: 'register',

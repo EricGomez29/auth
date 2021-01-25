@@ -9,17 +9,17 @@
 
     <div class="form">
       <div class="email">
-        <ion-input type="text" name="email" placeholder="Correo electrónico"></ion-input>
+        <ion-input [(ngModel)]="email" type="text" name="email" placeholder="Correo electrónico"></ion-input>
       </div>
       <div class="checkbox">
         <ion-checkbox checked="false" color="dark"></ion-checkbox>
         <ion-label>Recordar correo</ion-label>
       </div>
       <div class="pass">
-        <ion-input type="password" name="pass" placeholder="Contraseña"></ion-input>
+        <ion-input [(ngModel)]="password" type="password" name="pass" placeholder="Contraseña"></ion-input>
       </div>
       <div class="buttons">
-        <ion-button color="dark">Iniciar sesión</ion-button>
+        <ion-button (click)="onSubmitLogin()" color="dark">Iniciar sesión</ion-button>
         <ion-button color="light">Registrarse</ion-button>
       </div>
     </div>

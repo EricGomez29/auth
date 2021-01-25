@@ -6,6 +6,16 @@ export const environment = {
   production: false
 };
 
+export const fireConfig = {
+  apiKey: "AIzaSyDyCAV8umVc28jXf3CEtImn5Ag55rgPmdc",
+  authDomain: "authyacare.firebaseapp.com",
+  projectId: "authyacare",
+  storageBucket: "authyacare.appspot.com",
+  messagingSenderId: "426979721762",
+  appId: "1:426979721762:web:cb13d10276703fad90407b",
+  measurementId: "G-6ZK53C51BB"
+};
+
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
