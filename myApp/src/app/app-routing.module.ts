@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from "./guards/auth.guard";
 import { NoLoginGuard } from "./guards/no-login.guard";
-import { RedirectGuard } from "./guards/redirect.guard";
 
 const routes: Routes = [{ 
     path: 'home',
